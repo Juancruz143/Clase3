@@ -46,12 +46,12 @@ public class Main implements Runnable {
         int id = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Ingrese el nombre del producto: ");
-        String name = scanner.nextLine();
+        String nombre = scanner.nextLine();
 
         System.out.print("Ingrese el precio del producto: ");
-        double price = Double.parseDouble(scanner.nextLine());
+        double precio = Double.parseDouble(scanner.nextLine());
 
-        Producto producto = new Producto(id, name, price);
+        Producto producto = new Producto(id, nombre, precio);
         tienda.agregarProducto(producto);
     }
 }
